@@ -105,7 +105,7 @@
                 <a href="chapter1/">
             
                     
-                    第 1 章 前言
+                    第 1 章 插槽确认
             
                 </a>
             
@@ -113,40 +113,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+        <li class="chapter " data-level="1.3" data-path="chapter2/">
             
-                <span>
-            
-                    
-                    第 2 章 服务器环境
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" >
-            
-                <span>
+                <a href="chapter2/">
             
                     
-                    2.1 系统构成
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1.1" data-path="chapter2/2.1.1.html">
-            
-                <a href="chapter2/2.1.1.html">
-            
-                    
-                    2.1.1 网络构成
+                    第 2 章 维护邮件
             
                 </a>
             
@@ -154,12 +126,65 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.2" data-path="chapter2/2.1.2.html">
+        <li class="chapter " data-level="1.4" data-path="chapter3/">
             
-                <a href="chapter2/2.1.2.html">
+                <a href="chapter3/">
             
                     
-                    2.1.2 EQ/QC-titan 硬件构成
+                    第 3 章 系统消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4/">
+            
+                <a href="chapter4/">
+            
+                    
+                    第 4 章 应用日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter5/">
+            
+                <a href="chapter5/">
+            
+                    
+                    第 5 章 文件残留
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chapter5/5.1.html">
+            
+                <a href="chapter5/5.1.html">
+            
+                    
+                    5.1 点检方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="chapter5/5.2.html">
+            
+                <a href="chapter5/5.2.html">
+            
+                    
+                    5.2 对照表
             
                 </a>
             
@@ -172,21 +197,81 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" >
+        <li class="chapter " data-level="1.7" data-path="chapter6/">
             
-                <span>
+                <a href="chapter6/">
             
                     
-                    2.2 系统文档
+                    第 6 章 Lock 文件
             
-                </span>
+                </a>
             
 
             
         </li>
     
+        <li class="chapter " data-level="1.8" data-path="chapter7/">
+            
+                <a href="chapter7/">
+            
+                    
+                    第 7 章 主要进程
+            
+                </a>
+            
 
-            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter8/">
+            
+                <a href="chapter8/">
+            
+                    
+                    第 8 章 集群状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter9/">
+            
+                <a href="chapter9/">
+            
+                    
+                    第 9 章 CPU 负载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter10/">
+            
+                <a href="chapter10/">
+            
+                    
+                    第 10 章 磁盘使用率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter11/">
+            
+                <a href="chapter11/">
+            
+                    
+                    第 11 章 表空间使用率
+            
+                </a>
+            
+
             
         </li>
     
@@ -236,7 +321,49 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="introduction">Introduction</h1>
-<p>This is a book powered by GitBook.</p>
+<p>Titan &#x9700;&#x70B9;&#x68C0;&#x670D;&#x52A1;&#x5668;&#x5171;&#x6709; 6 &#x53F0;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>alias</th>
+<th>hostname</th>
+<th>IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QC1</td>
+<td>tn1s001</td>
+<td>10.53.144.13</td>
+</tr>
+<tr>
+<td>QC2</td>
+<td>tn1s002</td>
+<td>10.53.144.14</td>
+</tr>
+<tr>
+<td>EQ1</td>
+<td>tn1s003</td>
+<td>10.53.144.17</td>
+</tr>
+<tr>
+<td>EQ2</td>
+<td>tn1s004</td>
+<td>10.53.144.18</td>
+</tr>
+<tr>
+<td>EQ3</td>
+<td>tn1s005</td>
+<td>10.53.144.5</td>
+</tr>
+<tr>
+<td>EQ4</td>
+<td>tn1s006</td>
+<td>10.53.144.6</td>
+</tr>
+</tbody>
+</table>
+<p>&#x70B9;&#x68C0;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#xFF1A; titanchk/cimcheck</p>
 
                                 
                                 </section>
@@ -265,7 +392,7 @@
             
                 
                 
-                <a href="chapter1/" class="navigation navigation-next navigation-unique" aria-label="Next page: 第 1 章 前言">
+                <a href="chapter1/" class="navigation navigation-next navigation-unique" aria-label="Next page: 第 1 章 插槽确认">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -276,7 +403,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"第 1 章 前言","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-03-30T07:08:33.086Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-23T02:18:57.681Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"第 1 章 插槽确认","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-04-23T03:07:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-23T06:45:27.224Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

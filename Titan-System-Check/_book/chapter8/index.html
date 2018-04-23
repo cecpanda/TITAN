@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第 8 章 集群状态 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter9/" />
+    
+    
+    <link rel="prev" href="../chapter7/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第 1 章 插槽确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第 2 章 维护邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第 3 章 系统消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第 4 章 应用日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第 5 章 文件残留
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/5.1.html">
+            
+                <a href="../chapter5/5.1.html">
+            
+                    
+                    5.1 点检方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/5.2.html">
+            
+                <a href="../chapter5/5.2.html">
+            
+                    
+                    5.2 对照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第 6 章 Lock 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    第 7 章 主要进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第 8 章 集群状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    第 9 章 CPU 负载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    第 10 章 磁盘使用率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter11/">
+            
+                <a href="../chapter11/">
+            
+                    
+                    第 11 章 表空间使用率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第 8 章 集群状态</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7CFB;&#x7EDF;&#x7FA4;&#x96C6;&#x8FD0;&#x884C;&#x72B6;&#x6001;">&#x7CFB;&#x7EDF;&#x7FA4;&#x96C6;&#x8FD0;&#x884C;&#x72B6;&#x6001;</h1>
+<p>&#x6B64;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x5728; root &#x7528;&#x6237;&#x4E0B;&#x64CD;&#x4F5C;&#xFF0C;<strong>&#x52A1;&#x5FC5;&#x8981;&#x8C28;&#x614E;&#x6267;&#x884C;&#xFF01;</strong></p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4E0D;&#x8BB0;&#x5F97;&#x5BC6;&#x7801;&#x4E86;&#xFF0C;&#x8BF7;&#x76F4;&#x63A5;&#x95EE;&#x6211;&#x3002;</p>
+</blockquote>
+<ol>
+<li><p>&#x5207;&#x6362; root</p>
+<p> <img src="static/1.jpg" alt=""></p>
+</li>
+<li><p>&#x8F93;&#x5165;&#x547D;&#x4EE4;</p>
+<p> <img src="static/2.jpg" alt=""></p>
+</li>
+</ol>
+<hr>
+<ul>
+<li>CLUSTER&#xFF1A;&#x5F53;&#x524D;&#x7FA4;&#x96C6;&#x540D;&#x5B57;</li>
+<li>STATUS&#xFF1A;&#x5F53;&#x524D;&#x7FA4;&#x96C6;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;up &#x4E3A;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;down &#x72B6;&#x6001;&#x5219;&#x8868;&#x660E;&#x7FA4;&#x96C6;&#x5DF2;&#x505C;&#x6B62;&#x3002;</li>
+<li>NODE&#x3001;STATUS&#x3001;STATE&#xFF1A;&#x5F53;&#x524D;&#x7FA4;&#x96C6;&#x7684;&#x6784;&#x6210;&#x8282;&#x70B9;&#x540D;&#x53CA;&#x5176;&#x72B6;&#x6001;&#xFF0C;up&amp;running&#x4E3A;&#x6B63;&#x5E38;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x4E3A;&#x5F02;&#x5E38;&#x3002;</li>
+<li>PACKAGE&#x3001;STATUS&#x3001;STATE&#x3001;AUTO_RUN&#x3001;NODE&#xFF1A;&#x7FA4;&#x96C6;&#x4E2D;&#x7684;&#x7A0B;&#x5E8F;&#x5305;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;up&amp;running &#x4E3A;&#x6B63;&#x5E38;&#xFF0C;NODE &#x4E00;&#x680F;&#x663E;&#x793A;&#x7684;&#x662F;&#x5F53;&#x524D;&#x7A0B;&#x5E8F;&#x5305;&#x7684;&#x8FD0;&#x884C;&#x8282;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x8FD0;&#x884C;&#x8282;&#x70B9;&#x5DF2;&#x53D1;&#x751F;&#x5207;&#x6362;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x7CFB;&#x7EDF;&#x53D1;&#x751F; failover&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter7/" class="navigation navigation-prev " aria-label="Previous page: 第 7 章 主要进程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter9/" class="navigation navigation-next " aria-label="Next page: 第 9 章 CPU 负载">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第 8 章 集群状态","level":"1.9","depth":1,"next":{"title":"第 9 章 CPU 负载","level":"1.10","depth":1,"path":"chapter9/README.md","ref":"chapter9/README.md","articles":[]},"previous":{"title":"第 7 章 主要进程","level":"1.8","depth":1,"path":"chapter7/README.md","ref":"chapter7/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter8/README.md","mtime":"2018-04-23T06:41:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-23T06:45:27.224Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
